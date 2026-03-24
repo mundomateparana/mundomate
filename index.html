@@ -16,7 +16,11 @@ header {
     background-color: #2e7d32;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 25px;
+}
+
+h2 {
+    text-align: center;
 }
 
 .container {
@@ -25,15 +29,16 @@ header {
 
 .productos {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 20px;
 }
 
 .producto {
     background: white;
     padding: 15px;
-    border-radius: 10px;
+    border-radius: 12px;
     text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 .producto img {
@@ -45,6 +50,7 @@ header {
     font-size: 20px;
     color: #2e7d32;
     margin: 10px 0;
+    font-weight: bold;
 }
 
 .boton {
@@ -52,8 +58,21 @@ header {
     background: #25d366;
     color: white;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 6px;
     text-decoration: none;
+    margin-top: 10px;
+}
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25d366;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 20px;
 }
 
 footer {
@@ -68,29 +87,45 @@ footer {
 <body>
 
 <header>
-    <h1>Mundo Mate</h1>
-    <p>Los mejores mates de Paraná</p>
+    <h1>🧉 Mundo Mate</h1>
+    <p>Mates, bombillas y grabados personalizados</p>
 </header>
 
 <div class="container">
 
-    <h2>Productos</h2>
+<h2>Productos</h2>
 
-    <div class="productos">
+<div class="productos">
 
-        <div class="producto">
-            <img src="https://via.placeholder.com/200" alt="Mate">
-            <h3>Mate Imperial</h3>
-            <p class="precio">$15000</p>
-            <a class="boton" href="https://wa.me/5493430000000?text=Hola%20quiero%20comprar%20Mate%20Imperial">Comprar</a>
-        </div>
+<div class="producto">
+    <img src="https://via.placeholder.com/300" alt="">
+    <h3>Mate Imperial</h3>
+    <p class="precio">$15000</p>
+    <a class="boton" href="https://wa.me/5493434613955?text=Hola%20quiero%20comprar%20Mate%20Imperial">Comprar</a>
+</div>
 
-    </div>
+<div class="producto">
+    <img src="https://via.placeholder.com/300" alt="">
+    <h3>Mate Personalizado (Grabado Láser)</h3>
+    <p class="precio">$18000</p>
+    <a class="boton" href="https://wa.me/5493434613955?text=Hola%20quiero%20un%20mate%20personalizado">Consultar</a>
+</div>
+
+<div class="producto">
+    <img src="https://via.placeholder.com/300" alt="">
+    <h3>Bombilla de acero</h3>
+    <p class="precio">$5000</p>
+    <a class="boton" href="https://wa.me/5493434613955?text=Hola%20quiero%20comprar%20una%20bombilla">Comprar</a>
+</div>
 
 </div>
 
+</div>
+
+<a class="whatsapp-float" href="https://wa.me/5493434613955">💬</a>
+
 <footer>
-    <p>© 2026 Mundo Mate</p>
+<p>© 2026 Mundo Mate - Paraná</p>
 </footer>
 
 </body>
